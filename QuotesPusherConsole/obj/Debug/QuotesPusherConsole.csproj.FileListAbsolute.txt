@@ -1,0 +1,76 @@
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPusherConsole\obj\Debug\QuotesPusherConsole.csprojResolveAssemblyReference.cache
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPusherConsole\bin\Debug\QuotesPusherConsole.exe.config
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPusherConsole\bin\Debug\QuotesPusherConsole.exe
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPusherConsole\bin\Debug\QuotesPusherConsole.pdb
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPusherConsole\bin\Debug\iFOREX.Collections.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPusherConsole\bin\Debug\iFOREX.Trading.DataContracts.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPusherConsole\bin\Debug\iFOREX.Utilities.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPusherConsole\bin\Debug\Messaging.Common.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPusherConsole\bin\Debug\Messaging.NetMq.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPusherConsole\bin\Debug\NetMQ.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPusherConsole\bin\Debug\iFOREX.Utilities40.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPusherConsole\bin\Debug\iFOREX.Utilities.LINQ.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPusherConsole\bin\Debug\log4net.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPusherConsole\bin\Debug\iFOREX.Utilities.Web.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPusherConsole\bin\Debug\Messaging.Common.pdb
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPusherConsole\bin\Debug\Messaging.NetMq.pdb
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPusherConsole\bin\Debug\iFOREX.Collections.pdb
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPusherConsole\bin\Debug\iFOREX.Collections.xml
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPusherConsole\bin\Debug\iFOREX.Trading.DataContracts.pdb
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPusherConsole\bin\Debug\iFOREX.Utilities.pdb
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPusherConsole\bin\Debug\iFOREX.Utilities40.pdb
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPusherConsole\bin\Debug\iFOREX.Utilities.LINQ.pdb
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPusherConsole\bin\Debug\iFOREX.Utilities.LINQ.xml
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPusherConsole\bin\Debug\iFOREX.Utilities.Web.pdb
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPusherConsole\obj\Debug\QuotesPusherConsole.exe
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPusherConsole\obj\Debug\QuotesPusherConsole.pdb
+D:\Projects\Research\SandBox\Messaging\QuotesPusherConsole\bin\Debug\QuotesPusherConsole.exe.config
+D:\Projects\Research\SandBox\Messaging\QuotesPusherConsole\obj\Debug\QuotesPusherConsole.exe
+D:\Projects\Research\SandBox\Messaging\QuotesPusherConsole\obj\Debug\QuotesPusherConsole.pdb
+D:\Projects\Research\SandBox\Messaging\QuotesPusherConsole\bin\Debug\QuotesPusherConsole.exe
+D:\Projects\Research\SandBox\Messaging\QuotesPusherConsole\bin\Debug\QuotesPusherConsole.pdb
+D:\Projects\Research\SandBox\Messaging\QuotesPusherConsole\bin\Debug\Messaging.Common.dll
+D:\Projects\Research\SandBox\Messaging\QuotesPusherConsole\bin\Debug\Messaging.NetMq.dll
+D:\Projects\Research\SandBox\Messaging\QuotesPusherConsole\bin\Debug\iFOREX.Utilities40.dll
+D:\Projects\Research\SandBox\Messaging\QuotesPusherConsole\bin\Debug\iFOREX.Utilities.LINQ.dll
+D:\Projects\Research\SandBox\Messaging\QuotesPusherConsole\bin\Debug\log4net.dll
+D:\Projects\Research\SandBox\Messaging\QuotesPusherConsole\bin\Debug\iFOREX.Utilities.Web.dll
+D:\Projects\Research\SandBox\Messaging\QuotesPusherConsole\bin\Debug\Messaging.Common.pdb
+D:\Projects\Research\SandBox\Messaging\QuotesPusherConsole\bin\Debug\Messaging.NetMq.pdb
+D:\Projects\Research\SandBox\Messaging\QuotesPusherConsole\bin\Debug\iFOREX.Collections.pdb
+D:\Projects\Research\SandBox\Messaging\QuotesPusherConsole\bin\Debug\iFOREX.Collections.xml
+D:\Projects\Research\SandBox\Messaging\QuotesPusherConsole\bin\Debug\iFOREX.Trading.DataContracts.pdb
+D:\Projects\Research\SandBox\Messaging\QuotesPusherConsole\bin\Debug\iFOREX.Utilities.pdb
+D:\Projects\Research\SandBox\Messaging\QuotesPusherConsole\bin\Debug\iFOREX.Utilities40.pdb
+D:\Projects\Research\SandBox\Messaging\QuotesPusherConsole\bin\Debug\iFOREX.Utilities.LINQ.pdb
+D:\Projects\Research\SandBox\Messaging\QuotesPusherConsole\bin\Debug\iFOREX.Utilities.LINQ.xml
+D:\Projects\Research\SandBox\Messaging\QuotesPusherConsole\bin\Debug\iFOREX.Utilities.Web.pdb
+D:\Projects\Research\SandBox\Messaging\QuotesPusherConsole\obj\Debug\QuotesPusherConsole.csprojResolveAssemblyReference.cache
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPusherConsole\bin\Debug\QuotesPusherConsole.exe.config
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPusherConsole\bin\Debug\QuotesPusherConsole.exe
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPusherConsole\bin\Debug\QuotesPusherConsole.pdb
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPusherConsole\bin\Debug\ServiceBlocks.Messaging.Common.dll
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPusherConsole\bin\Debug\ServiceBlocks.Messaging.NetMq.dll
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPusherConsole\bin\Debug\ServiceBlocks.Messaging.Common.pdb
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPusherConsole\bin\Debug\ServiceBlocks.Messaging.NetMq.pdb
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPusherConsole\obj\Debug\QuotesPusherConsole.csprojResolveAssemblyReference.cache
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPusherConsole\obj\Debug\QuotesPusherConsole.exe
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPusherConsole\obj\Debug\QuotesPusherConsole.pdb
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPusherConsole\bin\Debug\ServiceBlocks.Common.dll
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPusherConsole\bin\Debug\ServiceBlocks.Common.pdb
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPusherConsole\bin\Debug\QuotesContracts.dll
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPusherConsole\bin\Debug\QuotesContracts.pdb
+D:\GitHub\ServiceBlocks\QuotesPusherConsole\obj\Debug\QuotesPusherConsole.csprojResolveAssemblyReference.cache
+D:\GitHub\ServiceBlocks\QuotesPusherConsole\obj\Debug\QuotesPusherConsole.exe
+D:\GitHub\ServiceBlocks\QuotesPusherConsole\obj\Debug\QuotesPusherConsole.pdb
+D:\GitHub\ServiceBlocks\QuotesPusherConsole\bin\Debug\QuotesPusherConsole.exe.config
+D:\GitHub\ServiceBlocks\QuotesPusherConsole\bin\Debug\QuotesPusherConsole.exe
+D:\GitHub\ServiceBlocks\QuotesPusherConsole\bin\Debug\QuotesPusherConsole.pdb
+D:\GitHub\ServiceBlocks\QuotesPusherConsole\bin\Debug\QuotesContracts.dll
+D:\GitHub\ServiceBlocks\QuotesPusherConsole\bin\Debug\ServiceBlocks.Common.dll
+D:\GitHub\ServiceBlocks\QuotesPusherConsole\bin\Debug\ServiceBlocks.Messaging.Common.dll
+D:\GitHub\ServiceBlocks\QuotesPusherConsole\bin\Debug\ServiceBlocks.Messaging.NetMq.dll
+D:\GitHub\ServiceBlocks\QuotesPusherConsole\bin\Debug\ServiceBlocks.Common.pdb
+D:\GitHub\ServiceBlocks\QuotesPusherConsole\bin\Debug\QuotesContracts.pdb
+D:\GitHub\ServiceBlocks\QuotesPusherConsole\bin\Debug\ServiceBlocks.Messaging.Common.pdb
+D:\GitHub\ServiceBlocks\QuotesPusherConsole\bin\Debug\ServiceBlocks.Messaging.NetMq.pdb

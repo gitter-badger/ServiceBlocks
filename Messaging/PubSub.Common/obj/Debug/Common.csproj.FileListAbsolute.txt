@@ -1,0 +1,7 @@
+D:\Projects\Research\SandBox\ServiceBlocks\Messaging\PubSub.Common\bin\Debug\ServiceBlocks.Messaging.Common.dll
+D:\Projects\Research\SandBox\ServiceBlocks\Messaging\PubSub.Common\bin\Debug\ServiceBlocks.Messaging.Common.pdb
+D:\Projects\Research\SandBox\ServiceBlocks\Messaging\PubSub.Common\obj\Debug\ServiceBlocks.Messaging.Common.dll
+D:\Projects\Research\SandBox\ServiceBlocks\Messaging\PubSub.Common\obj\Debug\ServiceBlocks.Messaging.Common.pdb
+D:\Projects\Research\SandBox\ServiceBlocks\Messaging\PubSub.Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\Projects\Research\SandBox\ServiceBlocks\Messaging\PubSub.Common\bin\Debug\ServiceBlocks.Common.dll
+D:\Projects\Research\SandBox\ServiceBlocks\Messaging\PubSub.Common\bin\Debug\ServiceBlocks.Common.pdb

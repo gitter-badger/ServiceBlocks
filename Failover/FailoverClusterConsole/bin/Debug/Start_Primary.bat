@@ -1,0 +1,1 @@
+FailoverClusterConsole.exe Primary tcp://localhost:7776 tcp://localhost:7777

@@ -1,0 +1,14 @@
+D:\Projects\Research\SandBox\ServiceBlocks\Engines\QueuedTaskPool\bin\Debug\ServiceBlocks.Engines.QueuedTaskPool.dll
+D:\Projects\Research\SandBox\ServiceBlocks\Engines\QueuedTaskPool\bin\Debug\ServiceBlocks.Engines.QueuedTaskPool.pdb
+D:\Projects\Research\SandBox\ServiceBlocks\Engines\QueuedTaskPool\obj\Debug\QueuedTaskPool.csprojResolveAssemblyReference.cache
+D:\Projects\Research\SandBox\ServiceBlocks\Engines\QueuedTaskPool\obj\Debug\ServiceBlocks.Engines.QueuedTaskPool.dll
+D:\Projects\Research\SandBox\ServiceBlocks\Engines\QueuedTaskPool\obj\Debug\ServiceBlocks.Engines.QueuedTaskPool.pdb
+D:\Projects\Research\SandBox\ServiceBlocks\Engines\QueuedTaskPool\bin\Debug\ServiceBlocks.Common.dll
+D:\Projects\Research\SandBox\ServiceBlocks\Engines\QueuedTaskPool\bin\Debug\ServiceBlocks.Common.pdb
+D:\GitHub\ServiceBlocks\Engines\QueuedTaskPool\bin\Debug\ServiceBlocks.Engines.QueuedTaskPool.dll
+D:\GitHub\ServiceBlocks\Engines\QueuedTaskPool\bin\Debug\ServiceBlocks.Engines.QueuedTaskPool.pdb
+D:\GitHub\ServiceBlocks\Engines\QueuedTaskPool\bin\Debug\ServiceBlocks.Common.dll
+D:\GitHub\ServiceBlocks\Engines\QueuedTaskPool\bin\Debug\ServiceBlocks.Common.pdb
+D:\GitHub\ServiceBlocks\Engines\QueuedTaskPool\obj\Debug\QueuedTaskPool.csprojResolveAssemblyReference.cache
+D:\GitHub\ServiceBlocks\Engines\QueuedTaskPool\obj\Debug\ServiceBlocks.Engines.QueuedTaskPool.dll
+D:\GitHub\ServiceBlocks\Engines\QueuedTaskPool\obj\Debug\ServiceBlocks.Engines.QueuedTaskPool.pdb

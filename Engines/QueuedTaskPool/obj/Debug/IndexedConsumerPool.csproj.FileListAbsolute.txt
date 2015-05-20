@@ -1,0 +1,5 @@
+D:\Projects\Branches\SandBox\PlayWithBlockingCollection\IndexedConsumerPool\bin\Debug\IndexedConsumerPool.dll
+D:\Projects\Branches\SandBox\PlayWithBlockingCollection\IndexedConsumerPool\bin\Debug\IndexedConsumerPool.pdb
+D:\Projects\Branches\SandBox\PlayWithBlockingCollection\IndexedConsumerPool\obj\Debug\IndexedConsumerPool.dll
+D:\Projects\Branches\SandBox\PlayWithBlockingCollection\IndexedConsumerPool\obj\Debug\IndexedConsumerPool.pdb
+D:\Projects\Branches\SandBox\PlayWithBlockingCollection\IndexedConsumerPool\obj\Debug\IndexedConsumerPool.csprojResolveAssemblyReference.cache

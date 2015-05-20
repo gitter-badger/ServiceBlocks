@@ -1,0 +1,16 @@
+D:\Projects\Research\SandBox\Messaging\Messaging\FailoverClusterContainer\obj\Debug\FailoverClusterContainer.csprojResolveAssemblyReference.cache
+D:\Projects\Research\SandBox\Messaging\Messaging\FailoverClusterContainer\bin\Debug\FailoverClusterContainer.dll
+D:\Projects\Research\SandBox\Messaging\Messaging\FailoverClusterContainer\bin\Debug\FailoverClusterContainer.pdb
+D:\Projects\Research\SandBox\Messaging\Messaging\FailoverClusterContainer\bin\Debug\Automatonymous.dll
+D:\Projects\Research\SandBox\Messaging\Messaging\FailoverClusterContainer\bin\Debug\Messaging.Common.dll
+D:\Projects\Research\SandBox\Messaging\Messaging\FailoverClusterContainer\bin\Debug\Messaging.NetMq.dll
+D:\Projects\Research\SandBox\Messaging\Messaging\FailoverClusterContainer\bin\Debug\NetMQ.dll
+D:\Projects\Research\SandBox\Messaging\Messaging\FailoverClusterContainer\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\Research\SandBox\Messaging\Messaging\FailoverClusterContainer\bin\Debug\Taskell.dll
+D:\Projects\Research\SandBox\Messaging\Messaging\FailoverClusterContainer\bin\Debug\Messaging.Common.pdb
+D:\Projects\Research\SandBox\Messaging\Messaging\FailoverClusterContainer\bin\Debug\Messaging.NetMq.pdb
+D:\Projects\Research\SandBox\Messaging\Messaging\FailoverClusterContainer\bin\Debug\Automatonymous.xml
+D:\Projects\Research\SandBox\Messaging\Messaging\FailoverClusterContainer\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\Research\SandBox\Messaging\Messaging\FailoverClusterContainer\bin\Debug\Taskell.xml
+D:\Projects\Research\SandBox\Messaging\Messaging\FailoverClusterContainer\obj\Debug\FailoverClusterContainer.dll
+D:\Projects\Research\SandBox\Messaging\Messaging\FailoverClusterContainer\obj\Debug\FailoverClusterContainer.pdb

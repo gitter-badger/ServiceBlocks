@@ -1,0 +1,7 @@
+D:\Projects\Research\SandBox\ServiceBlocks\Messaging\Messaging.Tests\bin\Debug\ServiceBlocks.Messaging.Tests.dll
+D:\Projects\Research\SandBox\ServiceBlocks\Messaging\Messaging.Tests\bin\Debug\ServiceBlocks.Messaging.Tests.pdb
+D:\Projects\Research\SandBox\ServiceBlocks\Messaging\Messaging.Tests\bin\Debug\Moq.dll
+D:\Projects\Research\SandBox\ServiceBlocks\Messaging\Messaging.Tests\bin\Debug\Moq.xml
+D:\Projects\Research\SandBox\ServiceBlocks\Messaging\Messaging.Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
+D:\Projects\Research\SandBox\ServiceBlocks\Messaging\Messaging.Tests\obj\Debug\ServiceBlocks.Messaging.Tests.dll
+D:\Projects\Research\SandBox\ServiceBlocks\Messaging\Messaging.Tests\obj\Debug\ServiceBlocks.Messaging.Tests.pdb

@@ -1,0 +1,7 @@
+D:\Projects\Research\SandBox\ServiceBlocks\Messaging\PubSub.NetMq\bin\Debug\ServiceBlocks.Messaging.NetMq.dll
+D:\Projects\Research\SandBox\ServiceBlocks\Messaging\PubSub.NetMq\bin\Debug\ServiceBlocks.Messaging.NetMq.pdb
+D:\Projects\Research\SandBox\ServiceBlocks\Messaging\PubSub.NetMq\bin\Debug\ServiceBlocks.Messaging.Common.dll
+D:\Projects\Research\SandBox\ServiceBlocks\Messaging\PubSub.NetMq\bin\Debug\ServiceBlocks.Messaging.Common.pdb
+D:\Projects\Research\SandBox\ServiceBlocks\Messaging\PubSub.NetMq\obj\Debug\NetMq.csprojResolveAssemblyReference.cache
+D:\Projects\Research\SandBox\ServiceBlocks\Messaging\PubSub.NetMq\obj\Debug\ServiceBlocks.Messaging.NetMq.dll
+D:\Projects\Research\SandBox\ServiceBlocks\Messaging\PubSub.NetMq\obj\Debug\ServiceBlocks.Messaging.NetMq.pdb

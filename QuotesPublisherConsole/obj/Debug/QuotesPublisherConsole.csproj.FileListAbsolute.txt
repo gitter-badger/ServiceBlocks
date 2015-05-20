@@ -1,0 +1,88 @@
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\PubSub\QuotesPublisherConsole\bin\Debug\QuotesPublisherConsole.exe.config
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\PubSub\QuotesPublisherConsole\bin\Debug\QuotesPublisherConsole.exe
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\PubSub\QuotesPublisherConsole\bin\Debug\QuotesPublisherConsole.pdb
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\PubSub\QuotesPublisherConsole\bin\Debug\iFOREX.Collections.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\PubSub\QuotesPublisherConsole\bin\Debug\iFOREX.Trading.DataContracts.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\PubSub\QuotesPublisherConsole\bin\Debug\PubSub.Common.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\PubSub\QuotesPublisherConsole\bin\Debug\PubSub.NetMq.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\PubSub\QuotesPublisherConsole\bin\Debug\iFOREX.Utilities.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\PubSub\QuotesPublisherConsole\bin\Debug\iFOREX.Utilities40.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\PubSub\QuotesPublisherConsole\bin\Debug\iFOREX.Utilities.LINQ.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\PubSub\QuotesPublisherConsole\bin\Debug\NetMQ.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\PubSub\QuotesPublisherConsole\bin\Debug\log4net.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\PubSub\QuotesPublisherConsole\bin\Debug\MsgPack.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\PubSub\QuotesPublisherConsole\bin\Debug\iFOREX.Utilities.Web.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\PubSub\QuotesPublisherConsole\bin\Debug\iFOREX.Collections.pdb
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\PubSub\QuotesPublisherConsole\bin\Debug\iFOREX.Collections.xml
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\PubSub\QuotesPublisherConsole\bin\Debug\iFOREX.Trading.DataContracts.pdb
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\PubSub\QuotesPublisherConsole\bin\Debug\PubSub.Common.pdb
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\PubSub\QuotesPublisherConsole\bin\Debug\PubSub.NetMq.pdb
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\PubSub\QuotesPublisherConsole\bin\Debug\iFOREX.Utilities.pdb
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\PubSub\QuotesPublisherConsole\bin\Debug\iFOREX.Utilities40.pdb
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\PubSub\QuotesPublisherConsole\bin\Debug\iFOREX.Utilities.LINQ.pdb
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\PubSub\QuotesPublisherConsole\bin\Debug\iFOREX.Utilities.LINQ.xml
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\PubSub\QuotesPublisherConsole\bin\Debug\MsgPack.xml
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\PubSub\QuotesPublisherConsole\bin\Debug\iFOREX.Utilities.Web.pdb
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\PubSub\QuotesPublisherConsole\obj\Debug\QuotesPublisherConsole.csprojResolveAssemblyReference.cache
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\PubSub\QuotesPublisherConsole\obj\Debug\QuotesPublisherConsole.exe
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\PubSub\QuotesPublisherConsole\obj\Debug\QuotesPublisherConsole.pdb
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPublisherConsole\bin\Debug\QuotesPublisherConsole.exe.config
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPublisherConsole\bin\Debug\QuotesPublisherConsole.exe
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPublisherConsole\bin\Debug\QuotesPublisherConsole.pdb
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPublisherConsole\bin\Debug\iFOREX.Collections.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPublisherConsole\bin\Debug\iFOREX.Trading.DataContracts.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPublisherConsole\bin\Debug\iFOREX.Utilities.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPublisherConsole\bin\Debug\NetMQ.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPublisherConsole\bin\Debug\iFOREX.Utilities40.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPublisherConsole\bin\Debug\iFOREX.Utilities.LINQ.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPublisherConsole\bin\Debug\log4net.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPublisherConsole\bin\Debug\iFOREX.Utilities.Web.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPublisherConsole\bin\Debug\iFOREX.Collections.pdb
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPublisherConsole\bin\Debug\iFOREX.Collections.xml
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPublisherConsole\bin\Debug\iFOREX.Trading.DataContracts.pdb
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPublisherConsole\bin\Debug\iFOREX.Utilities.pdb
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPublisherConsole\bin\Debug\iFOREX.Utilities40.pdb
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPublisherConsole\bin\Debug\iFOREX.Utilities.LINQ.pdb
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPublisherConsole\bin\Debug\iFOREX.Utilities.LINQ.xml
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPublisherConsole\bin\Debug\iFOREX.Utilities.Web.pdb
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPublisherConsole\obj\Debug\QuotesPublisherConsole.csprojResolveAssemblyReference.cache
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPublisherConsole\obj\Debug\QuotesPublisherConsole.exe
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPublisherConsole\obj\Debug\QuotesPublisherConsole.pdb
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPublisherConsole\bin\Debug\Messaging.Common.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPublisherConsole\bin\Debug\Messaging.NetMq.dll
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPublisherConsole\bin\Debug\Messaging.Common.pdb
+D:\Projects\Branches\Dev-FX3\iFOREX Framework\iFOREX.Server\Messaging\QuotesPublisherConsole\bin\Debug\Messaging.NetMq.pdb
+D:\Projects\Research\SandBox\Messaging\QuotesPublisherConsole\bin\Debug\QuotesPublisherConsole.exe.config
+D:\Projects\Research\SandBox\Messaging\QuotesPublisherConsole\obj\Debug\QuotesPublisherConsole.exe
+D:\Projects\Research\SandBox\Messaging\QuotesPublisherConsole\obj\Debug\QuotesPublisherConsole.pdb
+D:\Projects\Research\SandBox\Messaging\QuotesPublisherConsole\obj\Debug\QuotesPublisherConsole.csprojResolveAssemblyReference.cache
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPublisherConsole\obj\Debug\QuotesPublisherConsole.csprojResolveAssemblyReference.cache
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPublisherConsole\obj\Debug\QuotesPublisherConsole.exe
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPublisherConsole\obj\Debug\QuotesPublisherConsole.pdb
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPublisherConsole\bin\Debug\QuotesPublisherConsole.exe.config
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPublisherConsole\bin\Debug\QuotesPublisherConsole.exe
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPublisherConsole\bin\Debug\QuotesPublisherConsole.pdb
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPublisherConsole\bin\Debug\QuotesContracts.dll
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPublisherConsole\bin\Debug\ServiceBlocks.Common.dll
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPublisherConsole\bin\Debug\ServiceBlocks.Messaging.Common.dll
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPublisherConsole\bin\Debug\ServiceBlocks.Messaging.NetMq.dll
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPublisherConsole\bin\Debug\log4net.dll
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPublisherConsole\bin\Debug\ServiceBlocks.Common.pdb
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPublisherConsole\bin\Debug\QuotesContracts.pdb
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPublisherConsole\bin\Debug\ServiceBlocks.Messaging.Common.pdb
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPublisherConsole\bin\Debug\ServiceBlocks.Messaging.NetMq.pdb
+D:\Projects\Research\SandBox\ServiceBlocks\QuotesPublisherConsole\bin\Debug\iFOREX.Utilities.pdb
+D:\GitHub\ServiceBlocks\QuotesPublisherConsole\obj\Debug\QuotesPublisherConsole.csprojResolveAssemblyReference.cache
+D:\GitHub\ServiceBlocks\QuotesPublisherConsole\obj\Debug\QuotesPublisherConsole.exe
+D:\GitHub\ServiceBlocks\QuotesPublisherConsole\obj\Debug\QuotesPublisherConsole.pdb
+D:\GitHub\ServiceBlocks\QuotesPublisherConsole\bin\Debug\QuotesPublisherConsole.exe.config
+D:\GitHub\ServiceBlocks\QuotesPublisherConsole\bin\Debug\QuotesPublisherConsole.exe
+D:\GitHub\ServiceBlocks\QuotesPublisherConsole\bin\Debug\QuotesPublisherConsole.pdb
+D:\GitHub\ServiceBlocks\QuotesPublisherConsole\bin\Debug\QuotesContracts.dll
+D:\GitHub\ServiceBlocks\QuotesPublisherConsole\bin\Debug\ServiceBlocks.Common.dll
+D:\GitHub\ServiceBlocks\QuotesPublisherConsole\bin\Debug\ServiceBlocks.Messaging.Common.dll
+D:\GitHub\ServiceBlocks\QuotesPublisherConsole\bin\Debug\ServiceBlocks.Messaging.NetMq.dll
+D:\GitHub\ServiceBlocks\QuotesPublisherConsole\bin\Debug\ServiceBlocks.Common.pdb
+D:\GitHub\ServiceBlocks\QuotesPublisherConsole\bin\Debug\QuotesContracts.pdb
+D:\GitHub\ServiceBlocks\QuotesPublisherConsole\bin\Debug\ServiceBlocks.Messaging.Common.pdb
+D:\GitHub\ServiceBlocks\QuotesPublisherConsole\bin\Debug\ServiceBlocks.Messaging.NetMq.pdb

@@ -1,0 +1,14 @@
+D:\Projects\Research\SandBox\ServiceBlocks\Failover\FailoverClusterTests\bin\Debug\ServiceBlocks.Failover.FailoverClusterTests.dll
+D:\Projects\Research\SandBox\ServiceBlocks\Failover\FailoverClusterTests\bin\Debug\ServiceBlocks.Failover.FailoverClusterTests.pdb
+D:\Projects\Research\SandBox\ServiceBlocks\Failover\FailoverClusterTests\bin\Debug\Moq.dll
+D:\Projects\Research\SandBox\ServiceBlocks\Failover\FailoverClusterTests\bin\Debug\Moq.xml
+D:\Projects\Research\SandBox\ServiceBlocks\Failover\FailoverClusterTests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
+D:\Projects\Research\SandBox\ServiceBlocks\Failover\FailoverClusterTests\obj\Debug\ServiceBlocks.Failover.FailoverClusterTests.dll
+D:\Projects\Research\SandBox\ServiceBlocks\Failover\FailoverClusterTests\obj\Debug\ServiceBlocks.Failover.FailoverClusterTests.pdb
+D:\GitHub\ServiceBlocks\Failover\FailoverClusterTests\bin\Debug\ServiceBlocks.Failover.FailoverClusterTests.dll
+D:\GitHub\ServiceBlocks\Failover\FailoverClusterTests\bin\Debug\ServiceBlocks.Failover.FailoverClusterTests.pdb
+D:\GitHub\ServiceBlocks\Failover\FailoverClusterTests\bin\Debug\Moq.dll
+D:\GitHub\ServiceBlocks\Failover\FailoverClusterTests\bin\Debug\Moq.xml
+D:\GitHub\ServiceBlocks\Failover\FailoverClusterTests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
+D:\GitHub\ServiceBlocks\Failover\FailoverClusterTests\obj\Debug\ServiceBlocks.Failover.FailoverClusterTests.dll
+D:\GitHub\ServiceBlocks\Failover\FailoverClusterTests\obj\Debug\ServiceBlocks.Failover.FailoverClusterTests.pdb
