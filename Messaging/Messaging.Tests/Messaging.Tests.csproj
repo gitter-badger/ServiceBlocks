@@ -63,14 +63,28 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Common\DefaultConnectionMonitorTest.cs" />
+    <Compile Include="Common\DefaultLastValueCacheTest.cs" />
+    <Compile Include="Common\MockBufferedPublisher.cs" />
+    <Compile Include="Common\BufferedPublisherTest.cs" />
+    <Compile Include="Common\MockMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Common\" />
     <Folder Include="NetMq\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common\Common.csproj">
+      <Project>{FAA1A0EE-C1B2-4BF7-9511-75990A007E83}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PubSub.Common\Messaging.Common.csproj">
+      <Project>{5FF7EEEF-44DD-4604-B6A0-A57A0DB59410}</Project>
+      <Name>Messaging.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

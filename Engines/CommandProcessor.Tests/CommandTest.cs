@@ -13,7 +13,7 @@ namespace ServiceBlocks.CommandProcessor.Tests
         {
             var mock = new Mock<MockCommand>();
             mock.Object.Execute();
-            mock.Protected().Verify("ExecuteCommand", Times.Exactly(1));
+            mock.Protected().Verify("ExecuteCommand", Times.Once());
             Assert.IsTrue(mock.Object.CreatedTime > DateTime.UtcNow.AddMinutes(-1));
             Assert.IsTrue(mock.Object.ExecuteStartedTime > mock.Object.CreatedTime);
             Assert.IsTrue(mock.Object.ExecuteCompletedTime > mock.Object.ExecuteStartedTime);
@@ -26,7 +26,7 @@ namespace ServiceBlocks.CommandProcessor.Tests
             var completed = mock.Object.Completed();
             mock.Object.Execute();
             var result = completed.Wait(500);
-            mock.Protected().Verify("ExecuteCommand", Times.Exactly(1));
+            mock.Protected().Verify("ExecuteCommand", Times.Once());
             Assert.IsTrue(result);
         }
     }

@@ -15,3 +15,7 @@ D:\GitHub\ServiceBlocks\Messaging\Messaging.Tests\bin\Debug\Moq.xml
 D:\GitHub\ServiceBlocks\Messaging\Messaging.Tests\obj\Debug\Messaging.Tests.csprojResolveAssemblyReference.cache
 D:\GitHub\ServiceBlocks\Messaging\Messaging.Tests\obj\Debug\ServiceBlocks.Messaging.Tests.dll
 D:\GitHub\ServiceBlocks\Messaging\Messaging.Tests\obj\Debug\ServiceBlocks.Messaging.Tests.pdb
+D:\GitHub\ServiceBlocks\Messaging\Messaging.Tests\bin\Debug\ServiceBlocks.Messaging.Common.dll
+D:\GitHub\ServiceBlocks\Messaging\Messaging.Tests\bin\Debug\ServiceBlocks.Common.dll
+D:\GitHub\ServiceBlocks\Messaging\Messaging.Tests\bin\Debug\ServiceBlocks.Messaging.Common.pdb
+D:\GitHub\ServiceBlocks\Messaging\Messaging.Tests\bin\Debug\ServiceBlocks.Common.pdb
