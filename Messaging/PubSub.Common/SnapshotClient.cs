@@ -13,7 +13,7 @@ namespace ServiceBlocks.Messaging.Common
 
         public abstract byte[] GetSnapshot(string topic);
 
-        T ISnapshotClient<T>.GetAndParseSnapshot(string topic)
+        public T GetAndParseSnapshot(string topic)
         {
             return _deserializer(GetSnapshot(topic));
         }

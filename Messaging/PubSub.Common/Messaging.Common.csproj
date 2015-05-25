@@ -72,7 +72,6 @@
     <Compile Include="IVersionFilter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SnapshotClient.cs" />
-    <Compile Include="SubscriptionManager.cs" />
     <Compile Include="TopicSubscriber.cs" />
     <Compile Include="TopicSubscription.cs" />
     <Compile Include="TopicSynchronizer.cs" />

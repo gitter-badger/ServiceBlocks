@@ -8,6 +8,11 @@ namespace ServiceBlocks.Messaging.Common
         public Action<T> MessageHandler { get; set; }
         public Func<byte[], T> Deserializer { get; set; }
 
+        public TopicSubscription()
+        {
+            Topic = typeof(T).FullName;
+        }
+
         #region ITopicSubscription Members
 
         Delegate ITopicSubscription.MessageHandler

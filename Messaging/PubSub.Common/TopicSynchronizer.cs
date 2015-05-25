@@ -68,17 +68,26 @@ namespace ServiceBlocks.Messaging.Common
         {
             Unsubscribe();
 
-            var newSubscription = new TopicSubscription<TValue>
+            var subscription = new TopicSubscription<TValue>
             {
                 Deserializer = _topicSubscription.Deserializer,
                 Topic = _topicSubscription.Topic,
                 MessageHandler = GenerateMessageHandler()
             };
 
-            _subscriber.Subscribe(newSubscription);
-            TryGetSnapshot(newSubscription);
-            _subscriber.Subscribe(_topicSubscription);
+            _subscriber.Subscribe(subscription);
+            TryGetSnapshot(subscription);
+
+            //var currentSubscription = new TopicSubscription<TValue>
+            //{
+            //    Deserializer = _topicSubscription.Deserializer,
+            //    Topic = _topicSubscription.Topic,
+            //    MessageHandler = GenerateCurrentMessageHandler()
+            //};
+
+            //_subscriber.Subscribe(currentSubscription);
         }
+
 
         private void TryGetSnapshot(TopicSubscription<TValue> subscription)
         {
@@ -98,36 +107,62 @@ namespace ServiceBlocks.Messaging.Common
 
         private Action<TValue> GenerateMessageHandler()
         {
-            Action<TValue> messageHandler = TryApplyVersionComparer(_topicSubscription.MessageHandler);
-            messageHandler = TryApplyValidationFilter(messageHandler);
-            return messageHandler;
-        }
+            Action<TValue> messageHandler = _topicSubscription.MessageHandler;
 
-        private Action<TValue> TryApplyValidationFilter(Action<TValue> messageHandler)
-        {
             if (_validationFilter != null)
-                return newValue => { if (_validationFilter(newValue)) messageHandler(newValue); };
+                messageHandler = ApplyVersionComparer(_topicSubscription.MessageHandler);
 
-            return messageHandler;
-        }
-
-        private Action<TValue> TryApplyVersionComparer(Action<TValue> messageHandler)
-        {
             if (_valueVersionComparer != null && _cache != null && _keyExtractor != null)
-                return newValue =>
-                {
-                    TValue cachedValue;
-                    TKey key = _keyExtractor(newValue);
-                    if (!_cache.TryGetValue(key, out cachedValue) || _valueVersionComparer(newValue, cachedValue))
-                    {
-                        _cache.UpdateValue(key, newValue);
-                        messageHandler(newValue);
-                    }
-                    else
-                        Debug.WriteLine("Dropped out of sync message");
-                };
+                messageHandler = ApplyValidationFilter(messageHandler);
 
             return messageHandler;
         }
+
+        //private Action<TValue> GenerateCurrentMessageHandler()
+        //{
+        //    Action<TValue> messageHandler = ApplyValidationFilter(_topicSubscription.MessageHandler);
+        //    messageHandler = TryApplyCacheUpdater(messageHandler);
+        //    return messageHandler;
+        //}
+
+        private Action<TValue> ApplyValidationFilter(Action<TValue> messageHandler)
+        {
+            return newValue =>
+            {
+                if (_validationFilter(newValue)) messageHandler(newValue);
+                else
+                    Debug.WriteLine("Dropped invalid message"); //TODO: pass handler action for invalid messages; };
+            };
+        }
+
+        private Action<TValue> ApplyVersionComparer(Action<TValue> messageHandler)
+        {
+            return newValue =>
+            {
+                TValue cachedValue;
+                TKey key = _keyExtractor(newValue);
+                if (!_cache.TryGetValue(key, out cachedValue) || _valueVersionComparer(newValue, cachedValue))
+                {
+                    _cache.UpdateValue(key, newValue);
+                    messageHandler(newValue);
+                }
+                else
+                    Debug.WriteLine("Dropped out of sync message"); //TODO: pass handler action for dropped messages
+            };
+        }
+
+        //private Action<TValue> TryApplyCacheUpdater(Action<TValue> messageHandler)
+        //{
+        //    if (_cache != null && _keyExtractor != null)
+        //        return newValue =>
+        //        {
+        //            TValue cachedValue;
+        //            TKey key = _keyExtractor(newValue);
+        //            _cache.UpdateValue(key, newValue);
+        //            messageHandler(newValue);
+        //        };
+
+        //    return messageHandler;
+        //}
     }
 }

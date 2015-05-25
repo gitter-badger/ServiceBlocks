@@ -67,7 +67,15 @@
     <Compile Include="Common\DefaultLastValueCacheTest.cs" />
     <Compile Include="Common\MockBufferedPublisher.cs" />
     <Compile Include="Common\BufferedPublisherTest.cs" />
+    <Compile Include="Common\MockBufferedSubscriber.cs" />
     <Compile Include="Common\MockMessage.cs" />
+    <Compile Include="Common\BufferedSubscriberTest.cs" />
+    <Compile Include="Common\DefaultVersionFilterTest.cs" />
+    <Compile Include="Common\MockSnapshotClient.cs" />
+    <Compile Include="Common\MockTopicSubscriber.cs" />
+    <Compile Include="Common\SnapshotClientTest.cs" />
+    <Compile Include="Common\TopicSubscriberTest.cs" />
+    <Compile Include="Common\TopicSynchronizerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

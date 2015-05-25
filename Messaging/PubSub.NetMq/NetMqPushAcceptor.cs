@@ -44,6 +44,7 @@ namespace ServiceBlocks.Messaging.NetMq
 
         protected override void ConsumeError(Exception ex)
         {
+            //TODO: inject logger/error handler
             Debug.WriteLine(ex.ToString());
         }
     }

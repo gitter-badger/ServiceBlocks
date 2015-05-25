@@ -25,7 +25,7 @@ namespace ServiceBlocks.Messaging.Common
 
         public TValue TakeNewerVersion(TValue currentValue, TValue newValue)
         {
-            return _versionFilter(currentValue, newValue) ? newValue : null;
+            return _versionFilter(currentValue, newValue) ? newValue : currentValue;
         }
     }
 }
