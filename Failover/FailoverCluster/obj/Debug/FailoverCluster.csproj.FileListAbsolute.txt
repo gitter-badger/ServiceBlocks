@@ -50,3 +50,5 @@ D:\GitHub\ServiceBlocks\Failover\FailoverCluster\bin\Debug\ServiceBlocks.Messagi
 D:\GitHub\ServiceBlocks\Failover\FailoverCluster\obj\Debug\FailoverCluster.csprojResolveAssemblyReference.cache
 D:\GitHub\ServiceBlocks\Failover\FailoverCluster\obj\Debug\ServiceBlocks.Failover.FailoverCluster.dll
 D:\GitHub\ServiceBlocks\Failover\FailoverCluster\obj\Debug\ServiceBlocks.Failover.FailoverCluster.pdb
+D:\GitHub\ServiceBlocks\Failover\FailoverCluster\bin\Debug\Automatonymous.dll
+D:\GitHub\ServiceBlocks\Failover\FailoverCluster\bin\Debug\Automatonymous.xml

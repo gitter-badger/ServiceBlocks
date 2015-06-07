@@ -71,3 +71,4 @@ D:\GitHub\ServiceBlocks\Failover\FailoverClusterConsole\bin\Debug\ServiceBlocks.
 D:\GitHub\ServiceBlocks\Failover\FailoverClusterConsole\bin\Debug\ServiceBlocks.Messaging.NetMq.pdb
 D:\GitHub\ServiceBlocks\Failover\FailoverClusterConsole\bin\Debug\ServiceBlocks.Common.pdb
 D:\GitHub\ServiceBlocks\Failover\FailoverClusterConsole\obj\Debug\FailoverClusterConsole.csprojResolveAssemblyReference.cache
+D:\GitHub\ServiceBlocks\Failover\FailoverClusterConsole\bin\Debug\Automatonymous.xml

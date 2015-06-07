@@ -40,8 +40,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Automatonymous">
-      <HintPath>..\packages\Automatonymous.1.2.8\lib\net40\Automatonymous.dll</HintPath>
+    <Reference Include="Automatonymous, Version=1.2.70.0, Culture=neutral, PublicKeyToken=b800c4cfcdeea87b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Automatonymous.1.2.9\lib\net40\Automatonymous.dll</HintPath>
     </Reference>
     <Reference Include="NetMQ">
       <HintPath>..\packages\NetMQ.3.3.0.11\lib\net40\NetMQ.dll</HintPath>
