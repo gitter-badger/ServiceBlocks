@@ -31,7 +31,7 @@ namespace ServiceBlocks.Messaging.Tests.Common
                     subscriber.Start();
                     subscriber.Stop(100);
                     subscriber.Start();
-                    Assert.IsTrue(countDown.Wait(500));
+                    Assert.IsTrue(countDown.Wait(5000));
                 }
             }
         }

@@ -6,7 +6,7 @@ using ServiceBlocks.Messaging.Common;
 
 namespace ServiceBlocks.Messaging.NetMq
 {
-    public class NetMqSnapshotServer : ITaskWorker
+    public class NetMqSnapshotServer : ITaskWorker, IDisposable
     {
         private readonly Func<string, byte[]> _snapshotFactory;
         private readonly TaskWorker _worker;
@@ -54,6 +54,11 @@ namespace ServiceBlocks.Messaging.NetMq
                     }
                 }
             }
+        }
+
+        public void Dispose()
+        {
+            _worker.Dispose();
         }
     }
 }

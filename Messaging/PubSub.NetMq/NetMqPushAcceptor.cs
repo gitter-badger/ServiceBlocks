@@ -17,8 +17,6 @@ namespace ServiceBlocks.Messaging.NetMq
 
         protected override void ProducerAction()
         {
-            if (IsEmpty) return;
-
             using (NetMQContext ctx = NetMQContext.Create())
             {
                 using (RouterSocket socket = ctx.CreateRouterSocket())
@@ -28,7 +26,7 @@ namespace ServiceBlocks.Messaging.NetMq
                     while (true)
                     {
                         NetMQMessage message = socket.ReceiveMessage();
-                        Queue.Add(message);
+                        if (!IsEmpty) Queue.Add(message);
                     }
                 }
             }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using Moq.Protected;
@@ -12,6 +13,7 @@ namespace ServiceBlocks.CommandProcessor.Tests
         public void TestExecuteCommand()
         {
             var mock = new Mock<MockCommand>();
+            Thread.Sleep(1500);
             mock.Object.Execute();
             mock.Protected().Verify("ExecuteCommand", Times.Once());
             Assert.IsTrue(mock.Object.CreatedTime > DateTime.UtcNow.AddMinutes(-1));
@@ -23,6 +25,7 @@ namespace ServiceBlocks.CommandProcessor.Tests
         public void TestExecuteCommandAsync()
         {
             var mock = new Mock<MockCommand>(true);
+            Thread.Sleep(1000);
             var completed = mock.Object.Completed();
             mock.Object.Execute();
             var result = completed.Wait(500);

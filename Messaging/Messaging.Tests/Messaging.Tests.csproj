@@ -48,6 +48,9 @@
     <Reference Include="Moq">
       <HintPath>..\..\packages\Moq.4.2.1502.0911\lib\net40\Moq.dll</HintPath>
     </Reference>
+    <Reference Include="NetMQ">
+      <HintPath>..\..\packages\NetMQ.3.3.0.11\lib\net40\NetMQ.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -76,11 +79,12 @@
     <Compile Include="Common\SnapshotClientTest.cs" />
     <Compile Include="Common\TopicSubscriberTest.cs" />
     <Compile Include="Common\TopicSynchronizerTest.cs" />
+    <Compile Include="NetMq\NetMqPubSubTest.cs" />
+    <Compile Include="NetMq\NetMqPushTest.cs" />
+    <Compile Include="NetMq\NetMqSnapshotTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="NetMq\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
@@ -92,6 +96,10 @@
     <ProjectReference Include="..\PubSub.Common\Messaging.Common.csproj">
       <Project>{5FF7EEEF-44DD-4604-B6A0-A57A0DB59410}</Project>
       <Name>Messaging.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PubSub.NetMq\Messaging.NetMq.csproj">
+      <Project>{F5D6B5FD-F688-430D-A22B-03189FD1FCE7}</Project>
+      <Name>Messaging.NetMq</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

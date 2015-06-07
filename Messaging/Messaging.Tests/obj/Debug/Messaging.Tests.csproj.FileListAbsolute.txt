@@ -19,3 +19,6 @@ D:\GitHub\ServiceBlocks\Messaging\Messaging.Tests\bin\Debug\ServiceBlocks.Messag
 D:\GitHub\ServiceBlocks\Messaging\Messaging.Tests\bin\Debug\ServiceBlocks.Common.dll
 D:\GitHub\ServiceBlocks\Messaging\Messaging.Tests\bin\Debug\ServiceBlocks.Messaging.Common.pdb
 D:\GitHub\ServiceBlocks\Messaging\Messaging.Tests\bin\Debug\ServiceBlocks.Common.pdb
+D:\GitHub\ServiceBlocks\Messaging\Messaging.Tests\bin\Debug\NetMQ.dll
+D:\GitHub\ServiceBlocks\Messaging\Messaging.Tests\bin\Debug\ServiceBlocks.Messaging.NetMq.dll
+D:\GitHub\ServiceBlocks\Messaging\Messaging.Tests\bin\Debug\ServiceBlocks.Messaging.NetMq.pdb

@@ -46,7 +46,8 @@ namespace ServiceBlocks.Messaging.NetMq
                         {
                             _commandProcessor.ExecuteAll(socket);
                             NetMQMessage message = socket.ReceiveMessage();
-                            Queue.Add(message);
+                            if (message != null && !IsEmpty)
+                                Queue.Add(message);
                         }
                     }
                 }

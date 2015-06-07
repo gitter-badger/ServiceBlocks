@@ -77,15 +77,6 @@ namespace ServiceBlocks.Messaging.Common
 
             _subscriber.Subscribe(subscription);
             TryGetSnapshot(subscription);
-
-            //var currentSubscription = new TopicSubscription<TValue>
-            //{
-            //    Deserializer = _topicSubscription.Deserializer,
-            //    Topic = _topicSubscription.Topic,
-            //    MessageHandler = GenerateCurrentMessageHandler()
-            //};
-
-            //_subscriber.Subscribe(currentSubscription);
         }
 
 
@@ -118,13 +109,6 @@ namespace ServiceBlocks.Messaging.Common
             return messageHandler;
         }
 
-        //private Action<TValue> GenerateCurrentMessageHandler()
-        //{
-        //    Action<TValue> messageHandler = ApplyValidationFilter(_topicSubscription.MessageHandler);
-        //    messageHandler = TryApplyCacheUpdater(messageHandler);
-        //    return messageHandler;
-        //}
-
         private Action<TValue> ApplyValidationFilter(Action<TValue> messageHandler)
         {
             return newValue =>
@@ -150,19 +134,5 @@ namespace ServiceBlocks.Messaging.Common
                     Debug.WriteLine("Dropped out of sync message"); //TODO: pass handler action for dropped messages
             };
         }
-
-        //private Action<TValue> TryApplyCacheUpdater(Action<TValue> messageHandler)
-        //{
-        //    if (_cache != null && _keyExtractor != null)
-        //        return newValue =>
-        //        {
-        //            TValue cachedValue;
-        //            TKey key = _keyExtractor(newValue);
-        //            _cache.UpdateValue(key, newValue);
-        //            messageHandler(newValue);
-        //        };
-
-        //    return messageHandler;
-        //}
     }
 }
