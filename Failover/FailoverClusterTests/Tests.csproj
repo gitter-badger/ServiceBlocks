@@ -79,6 +79,7 @@
     <Compile Include="ClusterStateMachineTest.cs" />
     <Compile Include="MockStateObserver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="InstanceStateTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

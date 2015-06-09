@@ -17,24 +17,11 @@ namespace ServiceBlocks.Failover.FailoverCluster.StateMachine
 
             Event(() => Start);
             Event(() => PartnerStatusReceived);
-            Event(() => InvalidTopology);
             Event(() => LostPartner);
             Event(() => Stop);
 
             Initially(When(Start).Then(local => local.Status = NodeStatus.Connecting).TransitionTo(Connecting));
-
-            DuringAny(When(PartnerStatusReceived).Then((local, remote) =>
-            {
-                if (local.Role == remote.Role)
-                    this.RaiseEvent(local, InvalidTopology, remote);
-            }),
-                When(InvalidTopology)
-                    .Then(
-                        (local, remote) =>
-                            handleClusterExceptionAction(new ClusterException(ClusterFailureReason.InvalidTopology,
-                                local, remote)))
-                    .Then(local => local.Status = NodeStatus.Stopped).TransitionTo(Stopped));
-
+           
             During(Connecting,
                 //Passive Backup Partner Found
                 When(PartnerStatusReceived,
@@ -59,8 +46,7 @@ namespace ServiceBlocks.Failover.FailoverCluster.StateMachine
                         (local, remote) =>
                             handleClusterExceptionAction(new ClusterException(ClusterFailureReason.SplitBrain, local,
                                 remote)))
-                    .Then(local => local.Status = NodeStatus.Stopped)
-                    .TransitionTo(Stopped));
+                    .Then((local, remote) => this.RaiseEvent(local, Stop)));
 
             //Handle loss of cluster partner (disconnect/timeout). Passive node becomes active
             During(Passive,
@@ -68,8 +54,20 @@ namespace ServiceBlocks.Failover.FailoverCluster.StateMachine
                     .Then(local => local.Status = NodeStatus.Active)
                     .TransitionTo(Active));
             DuringAny(
-                When(LostPartner)
-                    .Then(local => handleClusterExceptionAction(new ClusterException(ClusterFailureReason.LostPartner))));
+               When(LostPartner)
+                   .Then(local => handleClusterExceptionAction(new ClusterException(ClusterFailureReason.LostPartner))));
+
+            DuringAny(When(PartnerStatusReceived).Then((local, remote) =>
+            {
+                //Invalid Topology
+                if (local.Role == remote.Role)
+                {
+                    handleClusterExceptionAction(new ClusterException(ClusterFailureReason.InvalidTopology,
+                        local, remote));
+                    this.RaiseEvent(local, Stop);
+                }
+            }));
+            
 
             DuringAny(When(Stop).Then(local => local.Status = NodeStatus.Stopped).TransitionTo(Stopped).Finalize());
         }
@@ -82,7 +80,6 @@ namespace ServiceBlocks.Failover.FailoverCluster.StateMachine
 
         public Event Start { get; private set; }
         public Event<NodeState> PartnerStatusReceived { get; private set; }
-        private Event<NodeState> InvalidTopology { get; set; }
         public Event<NodeState> LostPartner { get; private set; }
         public Event Stop { get; private set; }
     }

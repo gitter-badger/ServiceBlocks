@@ -62,6 +62,7 @@
     <Compile Include="Monitor\ClusterMonitor.cs" />
     <Compile Include="Monitor\ClusterMonitorBuilder.cs" />
     <Compile Include="Monitor\PubSubProxy.cs" />
+    <Compile Include="StateMachine\ClusterStateMachine - Copy.cs" />
     <Compile Include="StateMachine\ClusterStateMachine.cs" />
     <Compile Include="Enums.cs" />
     <Compile Include="StateMachine\InstanceState.cs" />
