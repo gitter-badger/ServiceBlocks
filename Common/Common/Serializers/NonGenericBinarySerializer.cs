@@ -9,11 +9,11 @@ namespace ServiceBlocks.Common.Serializers
     {
         public static byte[] SerializeToByteArray(object item)
         {
-            BinaryFormatter bin = new BinaryFormatter();
-            using(MemoryStream memStream = new MemoryStream())
+            var bin = new BinaryFormatter();
+            using (var memStream = new MemoryStream())
             {
                 bin.AssemblyFormat = FormatterAssemblyStyle.Simple;
-                bin.Serialize(memStream,item);
+                bin.Serialize(memStream, item);
                 memStream.Close();
                 return memStream.ToArray();
             }
@@ -26,9 +26,9 @@ namespace ServiceBlocks.Common.Serializers
 
         public static object DeSerializeFromByteArray(byte[] dataArray)
         {
-            using(MemoryStream memStream = new MemoryStream(dataArray))
+            using (var memStream = new MemoryStream(dataArray))
             {
-                BinaryFormatter bin = new BinaryFormatter();
+                var bin = new BinaryFormatter();
                 bin.AssemblyFormat = FormatterAssemblyStyle.Simple;
                 object resultObject = bin.Deserialize(memStream);
                 memStream.Close();

@@ -72,9 +72,8 @@ namespace QuoteSubscriberConsole
             if (isNewer)
             {
                 QuotesCache[q.InstrumentId] = q;
-                Console.WriteLine(
-                    string.Format("InstrumentId={0} SourceId={1} Bid={2} Ask={3} Time={4:HH:mm:ss.fff}",
-                        q.InstrumentId, q.SourceId, q.Bid, q.Ask, q.TradeTime));
+                Console.WriteLine("InstrumentId={0} SourceId={1} Bid={2} Ask={3} Time={4:HH:mm:ss.fff}", q.InstrumentId,
+                    q.SourceId, q.Bid, q.Ask, q.TradeTime);
             }
             else
                 Console.WriteLine("Older quote dissmissed");

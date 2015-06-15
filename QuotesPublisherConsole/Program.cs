@@ -28,7 +28,7 @@ namespace QuotesPublisherConsole
             var gateway = new NetMqPushAcceptor(gatewayaddress);
             gateway.Subscribe("q", message =>
             {
-                var q = BinarySerializer<Quote>.DeSerializeFromByteArray(message);
+                Quote q = BinarySerializer<Quote>.DeSerializeFromByteArray(message);
                 QuotesCache[q.InstrumentId] = q;
                 publisher.Publish("q", message);
             });

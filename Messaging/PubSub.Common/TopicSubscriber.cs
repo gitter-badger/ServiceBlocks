@@ -30,7 +30,7 @@ namespace ServiceBlocks.Messaging.Common
         {
             Subscribe(new TopicSubscription<T>
             {
-                Topic = typeof(T).FullName,
+                Topic = typeof (T).FullName,
                 MessageHandler = messageHandler,
                 Deserializer = deSerializer
             });

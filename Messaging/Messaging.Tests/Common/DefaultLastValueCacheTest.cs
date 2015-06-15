@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ServiceBlocks.Messaging.Common;
 
 namespace ServiceBlocks.Messaging.Tests.Common

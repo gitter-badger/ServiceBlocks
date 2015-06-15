@@ -29,8 +29,8 @@ namespace ServiceBlocks.Engines.QueuedTaskPool
 
         private readonly bool _suspendedWorkersInPool = true;
         private readonly CancellationTokenSource _tokenSource;
-        private readonly bool _warmupWorkersInPool = true;
         private readonly int _waitForCompletionTimout;
+        private readonly bool _warmupWorkersInPool = true;
 
         private readonly List<IWorker<TKey, TItem>> _workersList = new List<IWorker<TKey, TItem>>();
         private readonly ConcurrentBag<IWorker<TKey, TItem>> _workersPool = new ConcurrentBag<IWorker<TKey, TItem>>();
@@ -55,7 +55,7 @@ namespace ServiceBlocks.Engines.QueuedTaskPool
             _onErrorAction = onErrorAction ?? (ex => Debug.Write(ex.ToString()));
 
             if (processPendingDegreeOfParallelism == 0)
-                _processPendingDegreeOfParallelism = Convert.ToInt32(Math.Ceiling(Environment.ProcessorCount / 2d));
+                _processPendingDegreeOfParallelism = Convert.ToInt32(Math.Ceiling(Environment.ProcessorCount/2d));
             else
                 _processPendingDegreeOfParallelism = processPendingDegreeOfParallelism;
             _tokenSource = new CancellationTokenSource();

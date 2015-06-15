@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Reflection;
 using System.Runtime.Serialization;
 using System.Text.RegularExpressions;
 
@@ -7,24 +6,26 @@ namespace ServiceBlocks.Common.Serializers
 {
     public sealed class IgnoreAssemblyVersionBinder : SerializationBinder
     {
-        const string VERSION_REGEX = @"Version=.*?, ";
-        const string PublicKeyToken_REGEX = @", PublicKeyToken=\w*";
+        private const string VERSION_REGEX = @"Version=.*?, ";
+        private const string PublicKeyToken_REGEX = @", PublicKeyToken=\w*";
 
-        private static readonly Regex m_regex_findversiontag = new Regex(VERSION_REGEX,RegexOptions.Compiled);
-        private static readonly Regex m_regex_findpublictokentag = new Regex(PublicKeyToken_REGEX,RegexOptions.Compiled);
+        private static readonly Regex m_regex_findversiontag = new Regex(VERSION_REGEX, RegexOptions.Compiled);
+        private static readonly Regex m_regex_findpublictokentag = new Regex(PublicKeyToken_REGEX, RegexOptions.Compiled);
 
-        private bool m_IgnoreVersion;
-        private bool m_IgnorePublicKeyToken;
+        private readonly bool m_IgnorePublicKeyToken;
+        private readonly bool m_IgnoreVersion;
 
-        public IgnoreAssemblyVersionBinder() : this(true,false) { }
+        public IgnoreAssemblyVersionBinder() : this(true, false)
+        {
+        }
 
-        public IgnoreAssemblyVersionBinder(bool ignoreVersion,bool ignorePublicKeyToken)
+        public IgnoreAssemblyVersionBinder(bool ignoreVersion, bool ignorePublicKeyToken)
         {
             m_IgnoreVersion = ignoreVersion;
             m_IgnorePublicKeyToken = ignorePublicKeyToken;
         }
 
-        public override Type BindToType(string assemblyName,string typeName)
+        public override Type BindToType(string assemblyName, string typeName)
         {
             if (m_IgnoreVersion)
             {
@@ -37,16 +38,16 @@ namespace ServiceBlocks.Common.Serializers
                 assemblyName = m_regex_findpublictokentag.Replace(typeName, string.Empty);
             }
             Type type;
-            if (ValidateType(typeName,out type))
+            if (ValidateType(typeName, out type))
             {
                 return type;
             }
-            else
-                return null;
+            return null;
         }
-        private bool ValidateType(string typeName,out Type type)
+
+        private bool ValidateType(string typeName, out Type type)
         {
-            type = TypeDelegator.GetType(typeName);
+            type = Type.GetType(typeName);
             return true;
         }
     }

@@ -55,7 +55,9 @@ namespace ServiceBlocks.Common.Threading
                     {
                         _task.Wait(timeout, _taskCancellation.Token);
                     }
-                    catch (OperationCanceledException) { }
+                    catch (OperationCanceledException)
+                    {
+                    }
                 }
             }
         }

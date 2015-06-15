@@ -68,7 +68,7 @@ namespace ServiceBlocks.Engines.QueuedTaskPool.Tests
             Task task = Task.Factory.StartNew(() => target.TryAcceptWorker(worker));
 
             Assert.IsTrue(SpinWaitHelper.SpinWaitForCondition(() => target.IsBusy, 1000));
-                //should become busy when accept occurs
+            //should become busy when accept occurs
             task.Wait();
             Assert.IsTrue(dequeueCount.Wait(1000)); //completed should be called
             Assert.IsTrue(completed.Wait(1000)); //completed should be called

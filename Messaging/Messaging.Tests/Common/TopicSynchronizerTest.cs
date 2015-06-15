@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Moq;
 using ServiceBlocks.Messaging.Common;
 
 namespace ServiceBlocks.Messaging.Tests.Common
@@ -17,18 +15,20 @@ namespace ServiceBlocks.Messaging.Tests.Common
         {
             var cache = new DefaultLastValueCache<int, MockMessage>();
             var subscriber = new MockTopicSubscriber();
-            var snapshotClient = new MockSnapshotClient()
+            var snapshotClient = new MockSnapshotClient
             {
-                Data = new[]{
-                new MockMessage(){Data = new byte[]{1,11}},
-                new MockMessage(){Data = new byte[]{2,22}},
-                new MockMessage(){Data = new byte[]{3,33}}}
+                Data = new[]
+                {
+                    new MockMessage {Data = new byte[] {1, 11}},
+                    new MockMessage {Data = new byte[] {2, 22}},
+                    new MockMessage {Data = new byte[] {3, 33}}
+                }
             };
 
-            var subscription = new TopicSubscription<MockMessage>()
+            var subscription = new TopicSubscription<MockMessage>
             {
                 Topic = "",
-                Deserializer = m => new MockMessage() { Data = m },
+                Deserializer = m => new MockMessage {Data = m},
                 MessageHandler = m => Debug.WriteLine("[{0},{1}]", m.Data[0], m.Data[1])
             };
 
@@ -47,17 +47,17 @@ namespace ServiceBlocks.Messaging.Tests.Common
             {
                 for (byte i = 50; i < 250; i++)
                 {
-                    subscriber.InvokeSubscriptionAccessor("", new byte[] { 1, i });
+                    subscriber.InvokeSubscriptionAccessor("", new byte[] {1, i});
                     Thread.Sleep(10);
                 }
             });
 
             synchronizer.Init();
             Assert.AreEqual(3, cache.Count);
-            subscriber.InvokeSubscriptionAccessor("", new byte[] { 1, 10 });
+            subscriber.InvokeSubscriptionAccessor("", new byte[] {1, 10});
             Assert.AreEqual(3, cache.Count);
             Assert.IsTrue(cache[1].Data[1] >= 50);
-            subscriber.InvokeSubscriptionAccessor("", new byte[] { 1, 9 });
+            subscriber.InvokeSubscriptionAccessor("", new byte[] {1, 9});
             Assert.IsTrue(cache[1].Data[1] >= 50);
         }
 
@@ -66,18 +66,20 @@ namespace ServiceBlocks.Messaging.Tests.Common
         {
             var cache = new DefaultLastValueCache<int, MockMessage>();
             var subscriber = new MockTopicSubscriber();
-            var snapshotClient = new MockSnapshotClient()
+            var snapshotClient = new MockSnapshotClient
             {
-                Data = new[]{
-                new MockMessage(){Data = new byte[]{1,11}},
-                new MockMessage(){Data = new byte[]{2,22}},
-                new MockMessage(){Data = new byte[]{3,33}}}
+                Data = new[]
+                {
+                    new MockMessage {Data = new byte[] {1, 11}},
+                    new MockMessage {Data = new byte[] {2, 22}},
+                    new MockMessage {Data = new byte[] {3, 33}}
+                }
             };
 
-            var subscription = new TopicSubscription<MockMessage>()
+            var subscription = new TopicSubscription<MockMessage>
             {
                 Topic = "",
-                Deserializer = m => new MockMessage() { Data = m },
+                Deserializer = m => new MockMessage {Data = m},
                 MessageHandler = m => Debug.WriteLine("[{0},{1}]", m.Data[0], m.Data[1])
             };
 
@@ -93,10 +95,10 @@ namespace ServiceBlocks.Messaging.Tests.Common
             Assert.IsTrue(cache.IsEmpty);
             synchronizer.Init();
             Assert.AreEqual(3, cache.Count);
-            subscriber.InvokeSubscriptionAccessor("", new byte[] { 1, 10 });
+            subscriber.InvokeSubscriptionAccessor("", new byte[] {1, 10});
             Assert.AreEqual(3, cache.Count);
             Assert.AreEqual(11, cache[1].Data[1]);
-            subscriber.InvokeSubscriptionAccessor("", new byte[] { 1, 9 });
+            subscriber.InvokeSubscriptionAccessor("", new byte[] {1, 9});
             Assert.AreEqual(11, cache[1].Data[1]);
         }
     }

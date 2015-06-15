@@ -1,10 +1,6 @@
-﻿using System;
-using System.Threading;
+﻿using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Moq;
-using Moq.Protected;
 using ServiceBlocks.Common.Threading;
-using ServiceBlocks.Engines.QueuedTaskPool;
 
 namespace ServiceBlocks.CommandProcessor.Tests
 {
@@ -41,7 +37,7 @@ namespace ServiceBlocks.CommandProcessor.Tests
             var processor = new MockCommandProcessor();
             var command = new MockCommand(true);
             processor.Init(Assert.IsNull);
-            var newState = processor.ExecuteAsync(1, command).ConfigureAwait(true).GetAwaiter().GetResult();
+            bool newState = processor.ExecuteAsync(1, command).ConfigureAwait(true).GetAwaiter().GetResult();
             Assert.IsFalse(newState); //new state should be false
         }
 
@@ -52,7 +48,8 @@ namespace ServiceBlocks.CommandProcessor.Tests
             var processor = new MockCommandProcessor();
             processor.Init(Assert.IsNull);
             processor.ExecuteAndForget(1, command);
-            Assert.IsTrue(SpinWaitHelper.SpinWaitForCondition(() => command.CurrentState == false, 500)); //new state should be false
+            Assert.IsTrue(SpinWaitHelper.SpinWaitForCondition(() => command.CurrentState == false, 500));
+                //new state should be false
         }
     }
 }

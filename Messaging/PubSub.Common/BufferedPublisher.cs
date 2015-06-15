@@ -27,7 +27,7 @@ namespace ServiceBlocks.Messaging.Common
 
         public void Publish<T>(T item, Func<T, byte[]> serializer)
         {
-            Publish(typeof(T).FullName, item, serializer);
+            Publish(typeof (T).FullName, item, serializer);
         }
 
         public void Publish<T>(string topic, T item, Func<T, byte[]> serializer)

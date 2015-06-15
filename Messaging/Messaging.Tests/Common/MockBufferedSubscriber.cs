@@ -1,21 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ServiceBlocks.Messaging.Common;
 
 namespace ServiceBlocks.Messaging.Tests.Common
 {
     public class MockBufferedSubscriber : BufferedSubscriber<MockMessage>
     {
-        private readonly Action _producerAction;
-        private readonly Action _consumeMessageAction;
         private readonly Action _consumeErrorAction;
+        private readonly Action _consumeMessageAction;
+        private readonly Action _producerAction;
 
         public MockBufferedSubscriber()
         {
-
         }
 
         public MockBufferedSubscriber(Action producerAction, Action consumeMessageAction, Action consumeErrorAction)

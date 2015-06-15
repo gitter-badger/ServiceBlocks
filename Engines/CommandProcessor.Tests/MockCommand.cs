@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ServiceBlocks.Engines.CommandProcessor;
+﻿using ServiceBlocks.Engines.CommandProcessor;
 
 namespace ServiceBlocks.CommandProcessor.Tests
 {
     public class MockCommand : Command<bool>
     {
-
         public MockCommand()
             : base(true)
         {
@@ -20,14 +14,14 @@ namespace ServiceBlocks.CommandProcessor.Tests
         {
         }
 
-        protected override void ExecuteCommand()
-        {
-            State = false;
-        }
-
         public bool CurrentState
         {
             get { return State; }
+        }
+
+        protected override void ExecuteCommand()
+        {
+            State = false;
         }
     }
 }

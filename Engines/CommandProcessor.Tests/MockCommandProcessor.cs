@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ServiceBlocks.Engines.CommandProcessor;
+﻿using ServiceBlocks.Engines.CommandProcessor;
 
 namespace ServiceBlocks.CommandProcessor.Tests
 {

@@ -25,7 +25,7 @@ namespace ServiceBlocks.Engines.QueuedTaskPool.Tests
             {
                 target.Init((k, i) => { counter.Signal(); }, Assert.IsNull);
 
-                var q = new MockQueue { 1, 2 };
+                var q = new MockQueue {1, 2};
                 target.Run(q, w =>
                 {
                     Assert.AreSame(w, target);
@@ -45,7 +45,7 @@ namespace ServiceBlocks.Engines.QueuedTaskPool.Tests
             {
                 target.Init((k, i) => { counter.Signal(); }, Assert.IsNull);
 
-                var q = new MockQueue { 1, 2 };
+                var q = new MockQueue {1, 2};
                 target.Run(q, w =>
                 {
                     Assert.AreSame(w, target);
@@ -64,13 +64,13 @@ namespace ServiceBlocks.Engines.QueuedTaskPool.Tests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ApplicationException))]
+        [ExpectedException(typeof (ApplicationException))]
         public void TestRun_When_Already_Running()
         {
             using (var target = new ConsumerWorker<int, int>())
             {
                 target.Init((k, i) => Thread.Sleep(2000), Assert.IsNull);
-                var q = new MockQueue { 1 };
+                var q = new MockQueue {1};
                 target.Run(q, w => { });
                 Assert.IsTrue(target.IsRunning);
                 target.Run(q, w => { });
@@ -78,7 +78,7 @@ namespace ServiceBlocks.Engines.QueuedTaskPool.Tests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentNullException))]
+        [ExpectedException(typeof (ArgumentNullException))]
         public void TestRun_With_Null_Queue()
         {
             using (var target = new ConsumerWorker<int, int>())
@@ -89,7 +89,7 @@ namespace ServiceBlocks.Engines.QueuedTaskPool.Tests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentNullException))]
+        [ExpectedException(typeof (ArgumentNullException))]
         public void TestInit_With_Null_Action()
         {
             using (var target = new ConsumerWorker<int, int>())
@@ -104,15 +104,12 @@ namespace ServiceBlocks.Engines.QueuedTaskPool.Tests
             using (var target = new ConsumerWorker<int, int>())
             {
                 Exception newEx = null;
-                target.Init((k, i) =>
-                {
-                    throw new ApplicationException("Test Exception");
-                }, ex => newEx = ex);
+                target.Init((k, i) => { throw new ApplicationException("Test Exception"); }, ex => newEx = ex);
 
-                var q = new MockQueue { 1 };
+                var q = new MockQueue {1};
                 target.Run(q, w => { });
                 Assert.IsTrue(SpinWaitHelper.SpinWaitForCondition(() => newEx != null, 1000));
-                Assert.IsInstanceOfType(newEx, typeof(ApplicationException));
+                Assert.IsInstanceOfType(newEx, typeof (ApplicationException));
             }
         }
 
@@ -123,10 +120,10 @@ namespace ServiceBlocks.Engines.QueuedTaskPool.Tests
             {
                 Exception newEx = null;
                 target.Init((k, i) => { }, ex => newEx = ex);
-                var q = new MockQueue { 1 };
+                var q = new MockQueue {1};
                 target.Run(q, w => { throw new ApplicationException("Test Exception"); });
                 Assert.IsTrue(SpinWaitHelper.SpinWaitForCondition(() => newEx != null, 1000));
-                Assert.IsInstanceOfType(newEx, typeof(ApplicationException));
+                Assert.IsInstanceOfType(newEx, typeof (ApplicationException));
             }
         }
 
@@ -137,11 +134,8 @@ namespace ServiceBlocks.Engines.QueuedTaskPool.Tests
             using (var target = new ConsumerWorker<int, int>())
             {
                 Exception newEx = null;
-                target.Init((k, i) =>
-                {
-                    throw new ApplicationException("Test Exception");
-                });
-                var q = new MockQueue { 1 };
+                target.Init((k, i) => { throw new ApplicationException("Test Exception"); });
+                var q = new MockQueue {1};
                 target.Run(q, w => { counter.Signal(); });
                 Assert.IsTrue(counter.Wait(500));
             }

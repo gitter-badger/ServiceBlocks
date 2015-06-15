@@ -6,12 +6,13 @@ namespace ServiceBlocks.Failover.FailoverClusterTests
 {
     public class MockStateObserver : IObserver<StateChanged<InstanceState>>
     {
-        private readonly Action<StateChanged<InstanceState>> _onNextAction;
-        private readonly Action<Exception> _onError;
         private readonly Action _onCompletedAction;
+        private readonly Action<Exception> _onError;
+        private readonly Action<StateChanged<InstanceState>> _onNextAction;
 
 
-        public MockStateObserver(Action<StateChanged<InstanceState>> onNextAction, Action<Exception> onError = null, Action onCompletedAction = null)
+        public MockStateObserver(Action<StateChanged<InstanceState>> onNextAction, Action<Exception> onError = null,
+            Action onCompletedAction = null)
         {
             _onNextAction = onNextAction;
             _onError = onError ?? (ex => { });

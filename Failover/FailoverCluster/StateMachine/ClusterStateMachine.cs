@@ -21,7 +21,7 @@ namespace ServiceBlocks.Failover.FailoverCluster.StateMachine
             Event(() => Stop);
 
             Initially(When(Start).Then(local => local.Status = NodeStatus.Connecting).TransitionTo(Connecting));
-           
+
             During(Connecting,
                 //Passive Backup Partner Found
                 When(PartnerStatusReceived,
@@ -54,8 +54,8 @@ namespace ServiceBlocks.Failover.FailoverCluster.StateMachine
                     .Then(local => local.Status = NodeStatus.Active)
                     .TransitionTo(Active));
             DuringAny(
-               When(LostPartner)
-                   .Then(local => handleClusterExceptionAction(new ClusterException(ClusterFailureReason.LostPartner))));
+                When(LostPartner)
+                    .Then(local => handleClusterExceptionAction(new ClusterException(ClusterFailureReason.LostPartner))));
 
             DuringAny(When(PartnerStatusReceived).Then((local, remote) =>
             {
@@ -67,7 +67,7 @@ namespace ServiceBlocks.Failover.FailoverCluster.StateMachine
                     this.RaiseEvent(local, Stop);
                 }
             }));
-            
+
 
             DuringAny(When(Stop).Then(local => local.Status = NodeStatus.Stopped).TransitionTo(Stopped).Finalize());
         }

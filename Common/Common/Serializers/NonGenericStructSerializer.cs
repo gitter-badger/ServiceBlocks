@@ -14,15 +14,15 @@ namespace ServiceBlocks.Common.Serializers
 
             try
             {
-                Marshal.Copy(data,0,ptr,objsize);
+                Marshal.Copy(data, 0, ptr, objsize);
 
-                object retStruct = Marshal.PtrToStructure(ptr,t);
+                object retStruct = Marshal.PtrToStructure(ptr, t);
 
                 return retStruct;
             }
             finally
             {
-                if(ptr != IntPtr.Zero)
+                if (ptr != IntPtr.Zero)
                 {
                     Marshal.FreeHGlobal(ptr);
 
@@ -31,9 +31,9 @@ namespace ServiceBlocks.Common.Serializers
             }
         }
 
-        public static List<object> DeserializeList(byte[] data,Type t)
+        public static List<object> DeserializeList(byte[] data, Type t)
         {
-            IntPtr ptr = new IntPtr();
+            var ptr = new IntPtr();
 
             int size;
 
@@ -43,15 +43,15 @@ namespace ServiceBlocks.Common.Serializers
 
                 ptr = Marshal.AllocHGlobal(size);
 
-                int chunks = data.Length / size;
+                int chunks = data.Length/size;
 
-                List<object> messages = new List<object>(chunks);
+                var messages = new List<object>(chunks);
 
                 object message;
 
                 for (int i = 0; i < chunks; i++)
                 {
-                    Marshal.Copy(data, i * size, ptr, size);
+                    Marshal.Copy(data, i*size, ptr, size);
 
                     message = Marshal.PtrToStructure(ptr, t);
 
@@ -69,8 +69,6 @@ namespace ServiceBlocks.Common.Serializers
                     ptr = IntPtr.Zero;
                 }
             }
-
-
         }
 
         public static byte[] Serialize(object item, Type t)
@@ -83,7 +81,7 @@ namespace ServiceBlocks.Common.Serializers
             {
                 Marshal.StructureToPtr(item, ptr, true);
 
-                byte[] temp = new byte[size];
+                var temp = new byte[size];
 
                 Marshal.Copy(ptr, temp, 0, size);
 
@@ -106,16 +104,15 @@ namespace ServiceBlocks.Common.Serializers
 
             int count = objects.Count;
 
-            byte[] array = new byte[count * size];
+            var array = new byte[count*size];
 
             for (int i = 0; i < count; i++)
             {
                 Buffer.BlockCopy(Serialize(objects[i], t)
-                    , 0, array, size * i, size);
+                    , 0, array, size*i, size);
             }
 
             return array;
         }
-
-     }
+    }
 }

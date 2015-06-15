@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using ServiceBlocks.Messaging.Common;
 
 namespace ServiceBlocks.Messaging.Tests.Common
@@ -21,20 +16,20 @@ namespace ServiceBlocks.Messaging.Tests.Common
             _consumerAction = consumerAction;
         }
 
+        public int Count
+        {
+            get { return Queue.Count; }
+        }
+
         protected override MockMessage CreateMessage(string topic, byte[] data)
         {
-            return new MockMessage() { Topic = topic, Data = data };
+            return new MockMessage {Topic = topic, Data = data};
         }
 
         protected override void ConsumerAction()
         {
             if (_consumerAction != null)
                 _consumerAction();
-        }
-
-        public int Count
-        {
-            get { return Queue.Count; }
         }
     }
 }

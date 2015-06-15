@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text;
+﻿using System.Text;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ServiceBlocks.Messaging.NetMq;
@@ -12,13 +11,16 @@ namespace ServiceBlocks.Messaging.Tests.NetMq
         [TestMethod]
         public void TestSnapshots()
         {
-
-            var address = string.Format("tcp://localhost:22246");
+            string address = string.Format("tcp://localhost:22246");
             using (var server = new NetMqSnapshotServer(address, topic => Encoding.Unicode.GetBytes(topic)))
             {
                 server.Start();
-                byte[] snapshot = Task.Run(() => new NetMqSnapshotClient(address).GetSnapshot("abc")).ConfigureAwait(true).GetAwaiter().GetResult();
-                var bytesExpected = Encoding.Unicode.GetBytes("abc");
+                byte[] snapshot =
+                    Task.Run(() => new NetMqSnapshotClient(address).GetSnapshot("abc"))
+                        .ConfigureAwait(true)
+                        .GetAwaiter()
+                        .GetResult();
+                byte[] bytesExpected = Encoding.Unicode.GetBytes("abc");
                 CollectionAssert.AreEqual(bytesExpected, snapshot);
             }
         }

@@ -2,7 +2,6 @@
 using NetMQ;
 using NetMQ.Sockets;
 using ServiceBlocks.Common.Threading;
-using ServiceBlocks.Messaging.Common;
 
 namespace ServiceBlocks.Messaging.NetMq
 {
@@ -20,6 +19,11 @@ namespace ServiceBlocks.Messaging.NetMq
         }
 
         private string Address { get; set; }
+
+        public void Dispose()
+        {
+            _worker.Dispose();
+        }
 
         public void Start()
         {
@@ -54,11 +58,6 @@ namespace ServiceBlocks.Messaging.NetMq
                     }
                 }
             }
-        }
-
-        public void Dispose()
-        {
-            _worker.Dispose();
         }
     }
 }

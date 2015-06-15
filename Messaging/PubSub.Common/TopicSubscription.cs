@@ -5,12 +5,9 @@ namespace ServiceBlocks.Messaging.Common
     public class TopicSubscription<T> : ITopicSubscription
         where T : class
     {
-        public Action<T> MessageHandler { get; set; }
-        public Func<byte[], T> Deserializer { get; set; }
-
         public TopicSubscription()
         {
-            Topic = typeof(T).FullName;
+            Topic = typeof (T).FullName;
         }
 
         #region ITopicSubscription Members
@@ -26,6 +23,9 @@ namespace ServiceBlocks.Messaging.Common
         }
 
         #endregion
+
+        public Action<T> MessageHandler { get; set; }
+        public Func<byte[], T> Deserializer { get; set; }
 
         public string Topic { get; set; }
     }

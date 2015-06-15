@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -56,7 +55,9 @@ namespace ServiceBlocks.Messaging.Tests.Common
         {
             using (var countDown = new CountdownEvent(2))
             {
-                using (var subscriber = new MockBufferedSubscriber(() => { }, () => { throw new Exception(); }, () => { countDown.Signal(); }))
+                using (
+                    var subscriber = new MockBufferedSubscriber(() => { }, () => { throw new Exception(); },
+                        () => { countDown.Signal(); }))
                 {
                     subscriber.Start();
                     subscriber.Publish(new MockMessage());
@@ -65,6 +66,5 @@ namespace ServiceBlocks.Messaging.Tests.Common
                 }
             }
         }
-
     }
 }

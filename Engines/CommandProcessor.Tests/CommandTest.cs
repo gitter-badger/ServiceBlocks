@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading;
+using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using Moq.Protected;
@@ -26,9 +27,9 @@ namespace ServiceBlocks.CommandProcessor.Tests
         {
             var mock = new Mock<MockCommand>(true);
             Thread.Sleep(1000);
-            var completed = mock.Object.Completed();
+            Task<bool> completed = mock.Object.Completed();
             mock.Object.Execute();
-            var result = completed.Wait(500);
+            bool result = completed.Wait(500);
             mock.Protected().Verify("ExecuteCommand", Times.Once());
             Assert.IsTrue(result);
         }
