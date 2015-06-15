@@ -53,6 +53,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="Taskell">
       <HintPath>..\packages\Taskell.0.1.2\lib\net40\Taskell.dll</HintPath>
     </Reference>
@@ -62,7 +63,6 @@
     <Compile Include="Monitor\ClusterMonitor.cs" />
     <Compile Include="Monitor\ClusterMonitorBuilder.cs" />
     <Compile Include="Monitor\PubSubProxy.cs" />
-    <Compile Include="StateMachine\ClusterStateMachine - Copy.cs" />
     <Compile Include="StateMachine\ClusterStateMachine.cs" />
     <Compile Include="Enums.cs" />
     <Compile Include="StateMachine\InstanceState.cs" />
