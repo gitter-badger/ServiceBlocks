@@ -22,4 +22,5 @@ Open source projects used:
 * NetMq
 * Automatonymous State Machine
 
-
+License:
+LGPL-3.0
