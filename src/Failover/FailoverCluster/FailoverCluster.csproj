@@ -40,22 +40,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Automatonymous, Version=1.2.70.0, Culture=neutral, PublicKeyToken=b800c4cfcdeea87b, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Automatonymous.1.2.9\lib\net40\Automatonymous.dll</HintPath>
+    <Reference Include="Automatonymous">
+      <HintPath>..\..\packages\Automatonymous.1.2.7\lib\net40\Automatonymous.dll</HintPath>
     </Reference>
     <Reference Include="NetMQ">
-      <HintPath>..\packages\NetMQ.3.3.0.11\lib\net40\NetMQ.dll</HintPath>
+      <HintPath>..\..\packages\NetMQ.3.3.0.11\lib\net40\NetMQ.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xaml" />
     <Reference Include="Taskell">
-      <HintPath>..\packages\Taskell.0.1.2\lib\net40\Taskell.dll</HintPath>
+      <HintPath>..\..\packages\Taskell.0.1.2\lib\net40\Taskell.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

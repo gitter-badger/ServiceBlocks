@@ -45,11 +45,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AsyncIO">
+      <HintPath>..\..\packages\AsyncIO.0.1.17.0\lib\net40\AsyncIO.dll</HintPath>
+    </Reference>
     <Reference Include="Moq">
-      <HintPath>..\..\packages\Moq.4.2.1502.0911\lib\net40\Moq.dll</HintPath>
+      <HintPath>..\..\packages\Moq.4.2.1507.0118\lib\net40\Moq.dll</HintPath>
     </Reference>
     <Reference Include="NetMQ">
-      <HintPath>..\..\packages\NetMQ.3.3.0.11\lib\net40\NetMQ.dll</HintPath>
+      <HintPath>..\..\packages\NetMQ.3.3.2.1\lib\net40\NetMQ.dll</HintPath>
     </Reference>
     <Reference Include="System" />
   </ItemGroup>
