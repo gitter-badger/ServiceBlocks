@@ -1,9 +1,0 @@
-D:\Projects\Research\SandBox\ServiceBlocks\Common\Common\bin\Debug\ServiceBlocks.Common.dll
-D:\Projects\Research\SandBox\ServiceBlocks\Common\Common\bin\Debug\ServiceBlocks.Common.pdb
-D:\Projects\Research\SandBox\ServiceBlocks\Common\Common\obj\Debug\ServiceBlocks.Common.dll
-D:\Projects\Research\SandBox\ServiceBlocks\Common\Common\obj\Debug\ServiceBlocks.Common.pdb
-D:\GitHub\ServiceBlocks\Common\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
-D:\GitHub\ServiceBlocks\Common\Common\obj\Debug\ServiceBlocks.Common.dll
-D:\GitHub\ServiceBlocks\Common\Common\bin\Debug\ServiceBlocks.Common.dll
-D:\GitHub\ServiceBlocks\Common\Common\bin\Debug\ServiceBlocks.Common.pdb
-D:\GitHub\ServiceBlocks\Common\Common\obj\Debug\ServiceBlocks.Common.pdb
