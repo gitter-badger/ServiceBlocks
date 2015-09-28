@@ -1,1 +1,0 @@
-FailoverClusterConsole.exe Backup tcp://localhost:7777 tcp://localhost:7776

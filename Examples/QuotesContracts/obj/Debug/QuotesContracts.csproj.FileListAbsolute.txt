@@ -1,9 +1,0 @@
-D:\Projects\Research\SandBox\ServiceBlocks\Examples\QuotesContracts\bin\Debug\QuotesContracts.dll
-D:\Projects\Research\SandBox\ServiceBlocks\Examples\QuotesContracts\bin\Debug\QuotesContracts.pdb
-D:\Projects\Research\SandBox\ServiceBlocks\Examples\QuotesContracts\obj\Debug\QuotesContracts.dll
-D:\Projects\Research\SandBox\ServiceBlocks\Examples\QuotesContracts\obj\Debug\QuotesContracts.pdb
-D:\GitHub\ServiceBlocks\Examples\QuotesContracts\bin\Debug\QuotesContracts.dll
-D:\GitHub\ServiceBlocks\Examples\QuotesContracts\bin\Debug\QuotesContracts.pdb
-D:\GitHub\ServiceBlocks\Examples\QuotesContracts\obj\Debug\QuotesContracts.dll
-D:\GitHub\ServiceBlocks\Examples\QuotesContracts\obj\Debug\QuotesContracts.pdb
-D:\GitHub\ServiceBlocks\Examples\QuotesContracts\obj\Debug\QuotesContracts.csprojResolveAssemblyReference.cache
