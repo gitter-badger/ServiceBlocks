@@ -1,4 +1,6 @@
 # ServiceBlocks
+
+[![Join the chat at https://gitter.im/amichel/ServiceBlocks](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/amichel/ServiceBlocks?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Toolbox for building scalable .NET services
 
 Features included:
